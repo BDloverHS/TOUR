@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 뷰포트(viewport) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ,maximum-scale=1.0, minimum-scale=1.0">
+    <!-- swiper.css cdn으로 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- 사용자 정의 css 연결 -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- 파비콘 넣기 -->
+    <link rel="shortcut icon" type="image/icon" href="img/tous-ico.png">
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- swiper.js cdn으로 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- gsap 플러그인 연결(사용자 정의 js 위에 위치해야함) -->
+    <script src="js/gsap.min.js"></script>
+    <!-- 사용자 정의 js 연결 -->
+    <script src="js/main.js"></script>
+    <title>뚜레쥬르 리뉴얼</title>
+    <script>
+
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="center">
+                <!-- 로고 -->
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <!-- 내비게이션 2차원 메뉴 -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">브랜드 스토리</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">뚜레쥬르 광고</a></li>
+                                <li><a href="#">뚜레쥬르 재료 이야기</a></li>
+                                <li><a href="#">글로벌 뚜레쥬르</a></li>
+                                <li><a href="#">뚜레쥬르 라뜰리에</a></li>
+                                <li><a href="#">뚜레쥬르 착한빵</a></li>
+                                <li><a href="#">뉴스 & 공지사항</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">새로워진 뚜레쥬르</a>
+                            <ul class="sub">
+                                <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                                <li><a href="#">건강한 데일리 베이커리</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">제품 안내</a>
+                            <ul class="sub">
+                                <li><a href="#">신제품</a></li>
+                                <li><a href="#">빵</a></li>
+                                <li><a href="#">케이크</a></li>
+                                <li><a href="#">델리</a></li>
+                                <li><a href="#">선물</a></li>
+                                <li><a href="#">디저트 & 스낵</a></li>
+                                <li><a href="#">음료</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">이벤트&멤버십</a>
+                            <ul class="sub">
+                                <li><a href="#">진행중인 이벤트</a></li>
+                                <li><a href="#">이벤트 당첨자</a></li>
+                                <li><a href="#">CJ ONE 멤버십</a></li>
+                                <li><a href="#">제휴 혜택</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">뚜레쥬르 앱 & 온라인 쇼핑몰</a>
+                            <ul class="sub">
+                                <li><a href="#">뚜레쥬르 앱</a></li>
+                                <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                                <li><a href="#">꽃&케이크 택배 배송</a></li>
+                                <li><a href="#">대량 구매 문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 다국어지원, 메뉴 버튼 -->
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg aria-labelledby="languageIconTitle" color="#2329D6" fill="none" height="100%" role="img" stroke="#004225" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" viewBox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg" class="lang">
+                                    <title id="languageIconTitle"/><circle cx="12" cy="12" r="10"/>
+                                    <path d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z" stroke-linecap="round"/>
+                                    <path d="M2.5 9L21.5 9M2.5 15L21.5 15" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"  class="menu_Btn">
+                                <svg fill="none" height="100%" stroke-width="1.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 5H21" stroke="#004225" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 12H21" stroke="#004225" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 19H21" stroke="#004225" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 서브메뉴 배경 -->
+            <div class="sub_bg"></div>
+        </header>
+        
+        <section class="sec1">
+            <!-- 메인 슬라이드 - swiper plugin-->
+            <div class="swiper main">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide s1">
+                    <h1>건강한 데일리 베이커리</h1>
+                    <p>건강하지만 막있어야, 맛있지만 건강해야 매일 먹을 수 있어요!</p>
+                  </div>
+                  <div class="swiper-slide s2">
+                    <h1>달콤한 케이크와<br>향기로운 꽃으로<br>소중한 분들께<br>마음을 전하세요.</h1>
+                    <p>꽃&케이크 택배 배송 서비스</p>
+                  </div>
+                  <div class="swiper-slide s3">
+                    <h1>추석의 품격</h1>
+                    <p>뚜레쥬르가<br>품격있는<br>한가위를<br>선물합니다</p>                    
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <section class="sec2 scrollSet">
+            <div class="center">
+                <div class="bread ani firstAni">
+                    <h2>제품 검색</h2>
+                    <p>원하는 제품을 빠르게 찾을 수 있습니다.</p>
+                    <div class="search">
+                        <!-- <i>제품명을 입력해주세요.</i> -->
+                        <input type="text" name="bread_sc" placeholder="제품명 입력">
+                        <a href="#"><img src="img/search.png" alt="검색"></a>
+                    </div>
+                </div>
+                <div class="store ani secondAni">
+                    <h2>매장 검색</h2>
+                    <p>근처에 있는 뚜레쥬르 매장을 찾을 수 있습니다.</p>
+                    <div class="search">
+                        <!-- <i>매장명이나 시/군/구명 입력</i> -->
+                        <input type="text" name="store_sc" placeholder="매장명이나 시/군/구 입력">
+                        <a href="#"><img src="img/search.png" alt="검색"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec3 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>뚜레쥬르의 <br>추천제품</h2>
+                    <button type="button"><a href="#">제품 더보기</a></button>
+                </div>
+                <!-- swiper slide -->
+                <!-- 메인 슬라이드 - swiper plugin-->
+                <div class="swiper product ani secondAni">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="img img1"></div>
+                            <h2>사과 만난 크림치즈 브레드</h2>
+                            <p>달콤한 국내산 사과 다이스와 크림치즈가 조화로운 촉촉한 빵 위에 고소한 크럼블로 마무리한 간식빵</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img img2"></div>
+                            <h2>쇼콜라하트</h2>
+                            <p>진한 초코 가나슈 크림이 샌드 된 초코 케이크에 블링블링 다크초콜릿 코팅과 하트 초코 장식물로 볼륨감을 살린 제품</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img img3"></div>
+                            <h2>전통 다과세트</h2>
+                            <p>뚜레쥬르 세 가지맛 양갱과 두 가지 맛 모나카를 한번에 담은 전통 간식 선물세트</p>                    
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img img4"></div>
+                            <h2>[얼]애플망고빙수</h2>
+                            <p>달콤한 애플망고 다이스와 패션후르츠가 어우러진 상큼달콤한 열대과일 빙수</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img img5"></div>
+                            <h2>오리지널 까눌레</h2>
+                            <p>겉은 카라멜화되어 바삭하지만 속은 푸딩같이 부드러운 맛이 일품인 고급 디저트</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next ani"></div>
+                <div class="swiper-button-prev ani"></div>
+            </div>    
+        </section>
+        <section class="sec4 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>뉴스 및 공지사항</h2>
+                    <button type="button"><a href="#">소식 더보기</a></button>
+                </div>
+                <!-- swiper slide -->
+                <!-- 메인 슬라이드 - swiper plugin-->
+                <div class="swiper notice ani secondAni">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide s1">
+                            <h2>추석 사전예약하면 총 500만원 혜택 쏜다!</h2>
+                            <div class="data">
+                                <p>2023.09.12</p>
+                                <button type="button"><a href="#">자세히보기</a></button>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide s2">
+                            <h2>뚜레쥬르 갓 구운 가을을 만나다</h2>
+                            <div class="data">
+                                <p>2023.09.06</p>
+                                <button type="button"><a href="#">자세히보기</a></button>
+                            </div>                           
+                        </div>
+                        <div class="swiper-slide s3">
+                            <h2>CGV 영화 관람쿠폰 증정 이벤트 진행 매장 안내</h2>
+                            <div class="data">
+                                <p>2023.08.24</p>
+                                <button type="button"><a href="#">자세히보기</a></button> 
+                            </div>                                               
+                        </div>
+                        <div class="swiper-slide s4">
+                            <h2>CJ푸드빌 영상정보처리기기 운영/관리방침 개정 고지</h2>
+                            <div class="data">
+                                <p>2023.07.06</p>
+                                <button type="button"><a href="#">자세히보기</a></button>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide s5">
+                            <h2>CJ푸드빌 개인정보처리방침 개정고지</h2>
+                            <div class="data">
+                                <p>2023.07.06</p>
+                                <button type="button"><a href="#">자세히보기</a></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next ani"></div>
+                <div class="swiper-button-prev ani"></div>
+                
+            </div>
+        </section>
+        <section class="sec5 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>뚜레쥬르는 믿을만한가?</h2>
+                    <p>소비자에게 믿음으로 나아가는 뚜레쥬르로 보답하겠습니다.</p>
+                    <div class="graph">
+                        <img src="img/Increase.png" alt="증가 그래프">
+                    </div>
+                </div>
+                <div class="statis ani secondAni" id="count-area">
+                    <ul>
+                        <li>
+                            <img src="img/store-icon.png" alt="매장 수">
+                            <p>국내 매장 수</p>
+                            <div class="number">
+                                <span class="num" id="count-item1">1311</span>
+                                <b>점</b>
+                            </div>                            
+                        </li>
+                        <li>
+                            <img src="img/grobal.png" alt="해외 매장 수">
+                            <p>해외 매장 수</p>
+                            <div class="number">
+                                <span class="num" id="count-item2">431</span>
+                                <b>점</b>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <img src="img/website.png" alt="홈페이지 일일 평균 방문자 수">
+                            <p>홈페이지 일일 평균 방문자 수</p>
+                            <div class="number">
+                                <span class="num" id="count-item3">8350</span>
+                                <b>명</b>
+                            </div>                            
+                        </li>
+                        <li>
+                            <img src="img/Person.png" alt="소비자만족도">
+                            <p>소비자 만족도</p>
+                            <div class="number">
+                                <span class="num" id="count-item4">78.6</span>
+                                <b>%</b>
+                            </div>                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sec6 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>CJ바로가기</h2>
+                    <p>문화를 중심으로 다양한 사업을 통해 라이프스타일을 이끌어 가는 글로벌 생활문화기업 CJ,<br>문화를 만듭니다.</p>
+                    <button type="button">
+                        <a href="#">자세히보기</a>
+                    </button>
+                </div>
+                <div class="sub_corp secondAni">
+                    <ul>
+                        <li class="corp1 ani anit1"><a href="#">CJ그룹 바로가기</a></li>
+                        <li class="corp2 ani anit2"><a href="#">CJ 푸드딜 바로가기</a></li>
+                        <li class="corp3 ani anit3"><a href="#">CJ 제일제당 바로가기</a></li>
+                        <li class="corp4 ani anit4"><a href="#">CJ CGV 바로가기</a></li>
+                        <li class="corp5 ani anit5"><a href="#">CJ 올리브영 바로가기</a></li>
+                        <li class="corp6 ani anit6"><a href="#">CJ 대한통운 바로가기</a></li>
+                        <li class="corp7 ani anit7"><a href="#">CJ 웰케어 바로가기</a></li>
+                        <li class="corp8 ani anit8"><a href="#">CJ 피트엔케어 바로가기</a></li>
+                        <li class="corp9 ani anit9"><a href="#">CJ 프레시웨이 바로가기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="center">
+                <div class="footer1">
+                    <div class="f_logo">
+                        <img src="img/logo-1.png" alt="logo">
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">영상정보처리기기 운영관리방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">위치기반서비스 이용약관</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                    </div>
+                    <address>
+                        (우)04555 서울시 중구 마른내로34(초동 106-9번지) KT&G을지로타워3, 9-11층 CJ푸드빌(주) <br>
+                        대표이사: 김찬호 |  고객센터: 1577-0700 |  팩스 (02)6740-4349
+                    </address>
+                    <p>COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.</p>
+                </div>
+                <div class="footer2">
+                    <div class="family_site">
+                        <a href="#">Family Site</a>
+                        <div class="family_list">
+                            <ul>
+                                <li><a href="#">CJ그룹</a></li>
+                                <li><a href="#">CJ 푸드딜</a></li>
+                                <li><a href="#">CJ 제일제당</a></li>
+                                <li><a href="#">CJ CGV</a></li>
+                                <li><a href="#">CJ 올리브영</a></li>
+                                <li><a href="#">CJ 대한통운</a></li>
+                                <li><a href="#">CJ 웰케어</a></li>
+                                <li><a href="#">CJ 피트엔케어</a></li>
+                                <li><a href="#">CJ 프레시웨이</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li><a href="https://www.facebook.com/TOUSlesJOURS"><img src="img/facebook.png" alt="FACEBOOK"></a></li>
+                            <li><a href="https://twitter.com/cjtlj"><img src="img/twitter.png" alt="TWITTER"></a></li>
+                            <li><a href="https://www.instagram.com/touslesjours_kr/"><img src="img/instagram.png" alt="INSTAGRAM"></a></li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </footer>
+    </div>
+    <!-- top button -->
+    <div class="top">
+        <a href="#"><img src="img/top-arrow.png" alt="top_Button"></a>
+    </div>
+    <script>
+        // sec5영역의 count animation
+        // 카운팅 애니메이션 함수
+        function count(element, start, end, duration) {
+            let current = start;
+            const range = end - start;
+            const increment = range / (duration / 10);
+            const stepTime = 50; // 10ms 마다 증가하도록 설정
+
+            let timer = setInterval(function() {
+                current += increment;
+                if (current >= end) {
+                    clearInterval(timer);
+                    current = end;
+                }
+                element.textContent = formatNumber(current, end);
+            }, stepTime);
+        }
+
+        function formatNumber(number, end) {
+            if (Number.isInteger(end)) {
+                return number.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+            } else {
+                return number.toFixed(1);
+            }
+        }
+
+        // 스크롤 이벤트 리스너
+        window.addEventListener('scroll', function() {
+            const countArea = document.getElementById('count-area');
+            const countAreaPosition = countArea.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight;
+
+            if (countAreaPosition < screenPosition / 2) { // 요소가 반이상 보였을 때 실행
+
+                const count1 = document.getElementById('count-item1');
+                count(count1, 0, 1311, 300);
+
+                const count2 = document.getElementById('count-item2');
+                count(count2, 0, 431, 300);
+
+                const count3 = document.getElementById('count-item3');
+                count(count3, 0, 8350, 300);
+
+                const count4 = document.getElementById('count-item4');
+                count(count4, 0, 78.6, 300);
+
+                // 이벤트 리스너 삭제
+                window.removeEventListener('scroll', arguments.callee);
+            }
+        });
+    </script>
+    <script>
+        // rem:root 가로크기 기준(root==window)
+        // resize() 메소드
+        (function($) {
+            $.AdjustZoom = function(options) {
+            var option = { zoomRatio : 100 };
+            $.extend(option, options);
+            // 브라우저 배율이 100% 가 아닌 경우 처리
+            if(screen.logicalXDPI != screen.deviceXDPI) {
+                try {
+                //alert(screen.availWidth+", "+screen.logicalXDPI+", "+screen.deviceXDPI);
+                        var ratio = screen.logicalXDPI / screen.deviceXDPI;
+                        var ratio_reverse = screen.deviceXDPI / screen.logicalXDPI;
+                        $('body').css('zoom', ( ratio * option.zoomRatio)+'%');
+                        $('body').width(screen.availWidth * ratio_reverse );
+                }catch (e) {
+                    alert("브라우저 배율 보정 중 오류가 발생하였습니다. 창을 닫은 후 다시 열어 주시기 바랍니다.");
+                }
+            }
+        };
+    })(jQuery);
+    </script>
+
+
+</body>
+</html>
